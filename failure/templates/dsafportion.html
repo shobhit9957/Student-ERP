@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SSDC Daily Exams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SSDC Daily Exams</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="student.html">Student Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Faculty Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+    <div class="container my-5">
+        <form class="row gx-3 gy-2 align-items-center" method="post" action="dsafportion.html">
+          {% csrf_token %}
+    <br>
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+          <thead>
+              <tr class="bg-light-gray">
+                  <th class="text-uppercase">Select the Date: </th>
+                  <th class="text-uppercase">Subject Name: </th>
+                  <th class="text-uppercase">Provide the Portion</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date1">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub1">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por1" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date2">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub2">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por2" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date3">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub3">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por3" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date4">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub4">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por4" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date5">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub5">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por5" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date6">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub6">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por6" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+            <tr>
+                  <td>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="Select the date" name="date7">
+                    </div>
+                  </td>
+                  <td>
+                    <select class="form-select" id="specificSizeSelect" name="sub7">
+                      <option selected>Choose...</option>
+                      <option value="STATS">STATS</option>
+                      <option value="MATHS">MATHS</option>
+                      <option value="PHYSICS">Physics</option>
+                      <option value="FIT">FIT</option>
+                      <option value="Astrology">Astrology</option>
+                      <option value="Kinetics">Kinetics</option>
+                      <option value="MBA">MBA</option>
+                    </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="3" name="por7" ></textarea>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    <div class="col-12">
+        <button class="btn btn-primary col-12 float-right" type="submit">Submit</button>
+      </div>
+          </form>
+            </div>
+    <script></script>
+  </body>
+</html>
